@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
               }
             });
           },
-          child: Center(child: Text('HomeScreen2', style: kHintText))),
+          child: Center(child: Text('HomeScreen', style: kHintText))),
     );
   }
 }

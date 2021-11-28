@@ -6,6 +6,7 @@ import 'package:email_validator/email_validator.dart';
 import 'package:indian_zaika_vendor/constants/constants.dart';
 import 'package:indian_zaika_vendor/providers/auth_provider.dart';
 import 'package:indian_zaika_vendor/screens/forgot_password.dart';
+import 'package:indian_zaika_vendor/screens/home_screen.dart';
 import 'package:indian_zaika_vendor/screens/registration_screen.dart';
 import 'package:indian_zaika_vendor/widgets/already_button.dart';
 import 'package:indian_zaika_vendor/widgets/button.dart';
@@ -312,8 +313,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                     password: _PasswordController.text)
                                 .then((result) {
                               if (result == null) {
-                                // Navigator.pushReplacementNamed(
-                                //     context, SelectLocation.id);
+                                Navigator.pushReplacementNamed(
+                                    context, HomeScreen.id);
                                 scaffoldMessage('Done');
                                 setState(() {
                                   _loginAuth.isAuthLoading = false;
